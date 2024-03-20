@@ -9,7 +9,7 @@ def is_letter(char):
 
 def to_lowercase(char):
     if 'A' <= char <= 'Z':
-        return chr(ord(char) + 32)  # Küçük harfe dönüştürme
+        return chr(ord(char) + 32)  
     else:
         return char
 def word_count(text):
@@ -17,11 +17,11 @@ def word_count(text):
     in_word = False
 
     for char in text:
-        if char.isalnum():  # Harf ya da rakam ise
+        if char.isalnum(): 
             if not in_word:
                 in_word = True
                 word_count += 1
-        else:  # Boşluk, noktalama işareti vb. ise
+        else:  
             in_word = False
 
     return word_count
